@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Testando JS</title>
+</head>
+
+<body>
+    <button id="botao1">Crie uma caixa vermelha!</button>
+    <div></div>
+    <ul></ul>
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+
+    <script>
+        let botao1 = document.querySelector('button#botao1')
+        let boxes
+        botao1.onclick = () => {
+            let box = document.createElement('div')
+            let div = document.querySelector('body div')
+            box.style.backgroundColor = '#f00'
+            box.style.width = '100px'
+            box.style.height = '100px'
+            div.appendChild(box)
+            boxes = document.querySelectorAll('div div')
+            lastBox = boxes[boxes.length - 1]
+            lastBox.addEventListener("mouseover", trocaCor);
+        }
+
+        function trocaCor() {
+            const newColor = getRandomColor()
+            this.style.backgroundColor = newColor
+        }
+        function getRandomColor() {
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        const nomes = ["Diego", "Gabriel", "Lucas"];
+        let lista = document.querySelector('ul')
+        nomes.forEach(name => {
+            let linha = document.createElement('li')
+            let textLinha = document.createTextNode(name)
+            linha.appendChild(textLinha)
+            lista.appendChild(linha)
+        });
+
+        function adicionar() {
+            let input = document.querySelector('input')
+            if (input.value) {
+                let linha = document.createElement('li')
+                let textLinha = document.createTextNode(input.value)
+                linha.appendChild(textLinha)
+                lista.appendChild(linha)
+                input.value = ''
+            } else {
+                alert('Campo não pode estar vazio')
+            }
+        }
+
+    </script>
+</body>
+
+</html>
