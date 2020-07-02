@@ -57,6 +57,13 @@
   dependencies:
     "@babel/types" "^7.10.1"
 
+"@babel/helper-get-function-arity@^7.10.4":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-get-function-arity/-/helper-get-function-arity-7.10.4.tgz#98c1cbea0e2332f33f9a4661b8ce1505b2c19ba2"
+  integrity sha512-EkN3YDB+SRDgiIUnNgcmiD361ti+AVbL3f3Henf6dqqUyr5dMsorno0lJWJuLhDhkI5sYEpgj6y9kB8AOU1I2A==
+  dependencies:
+    "@babel/types" "^7.10.4"
+
 "@babel/helper-member-expression-to-functions@^7.10.1":
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.10.1.tgz#432967fd7e12a4afef66c4687d4ca22bc0456f15"
@@ -91,6 +98,11 @@
   dependencies:
     "@babel/types" "^7.10.1"
 
+"@babel/helper-plugin-utils@^7.10.4", "@babel/helper-plugin-utils@^7.8.0":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.10.4.tgz#2f75a831269d4f677de49986dff59927533cf375"
+  integrity sha512-O4KCvQA6lLiMU9l2eawBPMf1xPP8xPfB3iEQw150hOVTqj/rfXz0ThTb4HEzqQfs2Bmo5Ay8BzxfzVtBrr9dVg==
+
 "@babel/helper-replace-supers@^7.10.1":
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/helper-replace-supers/-/helper-replace-supers-7.10.1.tgz#ec6859d20c5d8087f6a2dc4e014db7228975f13d"
@@ -121,6 +133,11 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.10.1.tgz#5770b0c1a826c4f53f5ede5e153163e0318e94b5"
   integrity sha512-5vW/JXLALhczRCWP0PnFDMCJAchlBvM7f4uk/jXritBnIa6E1KmqmtrS3yn1LAnxFBypQ3eneLuXjsnfQsgILw==
 
+"@babel/helper-validator-identifier@^7.10.4":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.10.4.tgz#a78c7a7251e01f616512d31b10adcf52ada5e0d2"
+  integrity sha512-3U9y+43hz7ZM+rzG24Qe2mufW5KhvFg/NhnNph+i9mgCtdTCtMJuI1TMkrIUiK7Ix4PYlRF9I5dhqaLYA/ADXw==
+
 "@babel/helpers@^7.10.1":
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.10.1.tgz#a6827b7cb975c9d9cef5fd61d919f60d8844a973"
@@ -143,6 +160,30 @@
   version "7.10.2"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.10.2.tgz#871807f10442b92ff97e4783b9b54f6a0ca812d0"
   integrity sha512-PApSXlNMJyB4JiGVhCOlzKIif+TKFTvu0aQAhnTvfP/z3vVSN6ZypH5bfUNwFXXjRQtUEBNFd2PtmCmG2Py3qQ==
+
+"@babel/plugin-proposal-object-rest-spread@^7.10.4":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.10.4.tgz#50129ac216b9a6a55b3853fdd923e74bf553a4c0"
+  integrity sha512-6vh4SqRuLLarjgeOf4EaROJAHjvu9Gl+/346PbDH9yWbJyfnJ/ah3jmYKYtswEyCoWZiidvVHjHshd4WgjB9BA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+    "@babel/plugin-syntax-object-rest-spread" "^7.8.0"
+    "@babel/plugin-transform-parameters" "^7.10.4"
+
+"@babel/plugin-syntax-object-rest-spread@^7.8.0":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-object-rest-spread/-/plugin-syntax-object-rest-spread-7.8.3.tgz#60e225edcbd98a640332a2e72dd3e66f1af55871"
+  integrity sha512-XoqMijGZb9y3y2XskN+P1wUGiVwWZ5JmoDRwx5+3GmEplNyVM2s2Dg8ILFQm8rWM48orGy5YpI5Bl8U1y7ydlA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.0"
+
+"@babel/plugin-transform-parameters@^7.10.4":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-parameters/-/plugin-transform-parameters-7.10.4.tgz#7b4d137c87ea7adc2a0f3ebf53266871daa6fced"
+  integrity sha512-RurVtZ/D5nYfEg0iVERXYKEgDFeesHrHfx8RT05Sq57ucj2eOYAP6eu5fynL4Adju4I/mP/I6SO0DqNWAXjfLQ==
+  dependencies:
+    "@babel/helper-get-function-arity" "^7.10.4"
+    "@babel/helper-plugin-utils" "^7.10.4"
 
 "@babel/template@^7.10.1":
   version "7.10.1"
@@ -174,6 +215,15 @@
   integrity sha512-AD3AwWBSz0AWF0AkCN9VPiWrvldXq+/e3cHa4J89vo4ymjz1XwrBFFVZmkJTsQIPNk+ZVomPSXUJqq8yyjZsng==
   dependencies:
     "@babel/helper-validator-identifier" "^7.10.1"
+    lodash "^4.17.13"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.10.4":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.10.4.tgz#369517188352e18219981efd156bfdb199fff1ee"
+  integrity sha512-UTCFOxC3FsFHb7lkRMVvgLzaRVamXuAs2Tz4wajva4WxtVY82eZeaUBtC2Zt95FU9TiznuC0Zk35tsim8jeVpg==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.10.4"
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
